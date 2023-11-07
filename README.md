@@ -1,8 +1,9 @@
-OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE
-AIM:
-To implement interprocess communication using pipe command.
+# OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE
 
-ALGORITHM:
+## AIM:
+To implement interprocess communication using pipe command.
+## ALGORITHM:
+```
 1.	Create a child process using fork().
 2.	Create a simple pipe with C, we make use of the pipe() system call.
 3.	Create two file descriptor fd[0] is set up for reading, fd[1] is set up for writing
@@ -10,7 +11,11 @@ ALGORITHM:
 5.	Close the write end of child process and perform reading
 6.	Display the text.
 
-PROGRAM:
+```
+
+## PROGRAM:
+
+```
 
 #include <stdio.h>
 int main()
@@ -36,9 +41,11 @@ int main()
 
 return 0;
 }
-OUTPUT:
-image
+```
 
-RESULT:
+## OUTPUT:
+![image](https://github.com/silambarasan2004/OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE/assets/119559917/743e84f0-f740-44db-a742-04f81aea89bd)
+
+
+## RESULT:
 Thus the implementation of interprocess communication using pipe command is successfully executed.
-
